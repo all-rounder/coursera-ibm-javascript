@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <title>Andy's Travel Recommendations</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container-lg">
+            <nav class="navbar navbar-expand-lg bg-dark px-3" data-bs-theme="dark">
+                <a class="navbar-brand" href="#">Travel Bee</a>
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact-us.html">Contact Us</a>
+                    </li>
+                </ul>
+                <form id="searchForm" class="d-flex" role="search">
+                    <input id="searchInput" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-success me-2" type="submit">Search</button>
+                    <button class="btn btn-success" onclick="resetSearch()">Clear</button>
+                </form>
+            </nav>
+
+            <div class="main-container">
+                <div class="row">
+                    <div class="col text-white">
+                        <h1 class="page-title col-6">Explore Dream Destination</h1>
+                        <p class="page-desc col-6">It encourages exploration of unfamiliar territories, embracing diverse cultures and landscapes, 
+                        while pursuing the desired destionation that capivates the heart and ignits a sense of wonder.</p>
+                    </div>
+                    <div id="searchResult" class="col invisible">
+                        <div class="img-thumbnail mb-3">
+                            <img class="image img-fluid" src="#" />
+                            <div class=" bg-white">
+                                <h2 class="name">Name 1</h2>
+                                <p class="desc">Description 1</p>
+                            </div>
+                        </div>
+                        <div class="img-thumbnail">
+                            <img class="image img-fluid" src="#" />
+                            <div class=" bg-white">
+                                <h2 class="name">Name 2</h2>
+                                <p class="desc">Description 2</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>    
+
+        </div>
+
+        <script src="js/travel_recommendation.js"></script>
+
+    </body>
+</html>
